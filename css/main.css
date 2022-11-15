@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&display=swap");
 
 :root {
@@ -9,7 +16,8 @@
 }
 
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -31,7 +39,8 @@ body {
   margin-right: auto;
   width: 600px;
   background-color: var(--bg-section-color);
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.205);
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.205);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.205);
   padding: 50px 50px;
 }
 .visually-hidden {
@@ -43,13 +52,18 @@ body {
   padding: 0;
 
   white-space: nowrap;
-  clip-path: inset(100%);
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
 .hero-section-box-model {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 15px;
 }
 
@@ -133,9 +147,14 @@ input[type="checkbox"] {
 }
 
 .label-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .label-box-content {
   margin-left: 80px;
@@ -154,6 +173,8 @@ input[type="checkbox"] {
 }
 
 .label-box-content-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 150px;
   font-size: 23px;
@@ -167,8 +188,12 @@ input[type="checkbox"] {
 }
 
 .hero-section-box-texnalogiya {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .soroq-icon {
@@ -181,9 +206,14 @@ input[type="checkbox"] {
 }
 
 .aksi-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .aksi-subtitle {
@@ -205,8 +235,10 @@ input[type="checkbox"] {
 }
 
 .aksi-subtitle:hover{
+  background-image: -o-linear-gradient(358.9deg, #9710E9 1.17%, #FD8D43 99.31%);
   background-image: linear-gradient(91.1deg, #9710E9 1.17%, #FD8D43 99.31%);
+  -webkit-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
   transition: all 0.5s linear;
 }
-
 
